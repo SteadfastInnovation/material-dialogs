@@ -5,13 +5,11 @@ ext {
     PUBLISH_ARTIFACT_ID = 'commons'
     PUBLISH_VERSION = '0.8.6.2'
     SUPPORT_LIBRARY_VERSION = '24.1.0'
-    BUILD_TOOLS = "24.0.0"
     TARGET_SDK = 24
 }
 
 android {
     compileSdkVersion TARGET_SDK
-    buildToolsVersion BUILD_TOOLS
 
     defaultConfig {
         minSdkVersion 8
@@ -26,9 +24,9 @@ android {
 }
 
 dependencies {
-    compile "com.android.support:appcompat-v7:$SUPPORT_LIBRARY_VERSION"
-//    compile "com.afollestad.material-dialogs:core:${PUBLISH_VERSION}"
-    compile project(':core')
+    implementation "com.android.support:appcompat-v7:$SUPPORT_LIBRARY_VERSION"
+//    implemenation "com.afollestad.material-dialogs:core:${PUBLISH_VERSION}"
+    implementation project(':core')
 }
 
-apply from: 'https://raw.githubusercontent.com/afollestad/aidanfollestad.com/master/android-lib-release.gradle'
+//apply from: 'https://raw.githubusercontent.com/afollestad/aidanfollestad.com/master/android-lib-release.gradle'
