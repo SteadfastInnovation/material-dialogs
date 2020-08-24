@@ -2,8 +2,7 @@ apply plugin: 'com.android.application'
 
 ext {
     PUBLISH_VERSION = '0.8.6.2'
-    SUPPORT_LIBRARY_VERSION = '24.1.0'
-    TARGET_SDK = 24
+    TARGET_SDK = 29
 }
 
 android {
@@ -11,7 +10,7 @@ android {
 
     defaultConfig {
         applicationId "com.afollestad.materialdialogssample"
-        minSdkVersion 9
+        minSdkVersion 14
         targetSdkVersion TARGET_SDK
         versionCode 164
         versionName PUBLISH_VERSION
@@ -31,7 +30,8 @@ android {
 dependencies {
     implementation project(':core')
     implementation project(':commons')
-    implementation "com.android.support:gridlayout-v7:$SUPPORT_LIBRARY_VERSION"
+    implementation 'androidx.gridlayout:gridlayout:1.0.0'
     implementation 'com.jakewharton:butterknife:8.1.0'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.1.0'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
 }

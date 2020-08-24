@@ -10,9 +10,9 @@ import android.os.Bundle;
 import android.os.Parcel;
 import android.os.Parcelable;
 import android.preference.EditTextPreference;
-import android.preference.PreferenceManager;
-import android.support.annotation.NonNull;
-import android.support.v7.widget.AppCompatEditText;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.widget.AppCompatEditText;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -30,8 +30,6 @@ import com.afollestad.materialdialogs.MaterialDialog.Builder;
 import com.afollestad.materialdialogs.commons.R;
 import com.afollestad.materialdialogs.internal.MDTintHelper;
 import com.afollestad.materialdialogs.util.DialogUtils;
-
-import java.lang.reflect.Method;
 
 /**
  * @author Aidan Follestad (afollestad)
